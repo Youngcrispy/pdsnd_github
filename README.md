@@ -8,7 +8,7 @@ Bikeshare
 
 ### Description
 Bikeshare is a python-based script which displays information regarding bike hires across three US cities.
-The program will ask a series of questions to the user (city, timeframe, stats type) and then return the data based on the chosen preferences. The menu system employed allows the user to continually change their preferences or exit the program.
+The program will ask a series of questions to the user (e.g. city, timeframe, stats type) and then return the data based on the chosen preferences. The menu system employed allows the user to continually change their preferences or exit the program.
 
 ### Files used
 bikeshare.py - main script,
