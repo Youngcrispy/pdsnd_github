@@ -576,11 +576,12 @@ def greeting():
 
     curr_hour = time.strftime('%H')
     if int(curr_hour) < 12 :
-        print("Good morning!")
+        period_of_day = "morning"
     elif int(curr_hour) >= 12 and int(curr_hour) < 18:
-        print("Good afternoon!")
+        period_of_day = "afternoon"
     elif int(curr_hour) > 17 :
-        print("Good evening!")
+        period_of_day = "evening"
+    print ("Good " + period_of_day + "!")
 
 
 if __name__ == "__main__":
