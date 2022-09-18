@@ -2,6 +2,30 @@ import time
 import numpy as np
 import pandas as pd
 
+def greeting():
+    """Displays an initial greeting to the user based on the time of day."""
+
+    """
+        Args:
+            Nil
+
+        Returns:
+            Nil
+
+        Locals:
+            (str) curr_hour - temporary store for the current hour value.
+    """
+
+    curr_hour = time.strftime('%H')
+    if int(curr_hour) < 12 :
+        period_of_day = "morning"
+    elif int(curr_hour) >= 12 and int(curr_hour) < 18:
+        period_of_day = "afternoon"
+    elif int(curr_hour) > 17 :
+        period_of_day = "evening"
+    print ("Good " + period_of_day + "!")
+
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -558,30 +582,6 @@ def main():
                     print("Sorry. You can't have that as a choice. Try again")
                     continue
 
-
-
-def greeting():
-    """Displays an initial greeting to the user based on the time of day."""
-
-    """
-        Args:
-            Nil
-
-        Returns:
-            Nil
-
-        Locals:
-            (str) curr_hour - temporary store for the current hour value.
-    """
-
-    curr_hour = time.strftime('%H')
-    if int(curr_hour) < 12 :
-        period_of_day = "morning"
-    elif int(curr_hour) >= 12 and int(curr_hour) < 18:
-        period_of_day = "afternoon"
-    elif int(curr_hour) > 17 :
-        period_of_day = "evening"
-    print ("Good " + period_of_day + "!")
 
 
 if __name__ == "__main__":
