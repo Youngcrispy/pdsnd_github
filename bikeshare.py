@@ -582,7 +582,7 @@ def main():
                     print("Sorry. You can't have that as a choice. Try again")
                     continue
 
-
+############ End of function block ############
 
 if __name__ == "__main__":
     greeting()            ## Carry out initial greeting.
