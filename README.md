@@ -13,14 +13,9 @@ The program will ask a series of questions to the user (e.g. city, timeframe, st
 ### Files used
 bikeshare.py - main script,
 
-
 (Files not included in the repo)
---------------------------------
-
 chicago.csv - Chicago city data,
-
 new_york_city.csv - NYC city data file,
-
 washington.csv - Washington city data file
 
 ### Credits
